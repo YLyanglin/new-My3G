@@ -1,0 +1,141 @@
+@import "public.scss";
+.YZM{
+	color:#5E83E1;
+	@include pos;
+	right:10px;
+	top:50%;
+	font-size:14px;
+	margin-top:-8px;
+}
+.YZM-cf{
+	color:#333;
+	background:#ccc;
+	padding:5px;
+	border-radius:10px;
+	@include pos;
+	right:10px;
+	top:50%;
+	font-size:14px;
+	margin-top:-15px;
+}
+.PIC-YZM{
+	color:#5E83E1;
+	@include pos;
+	right:10px;
+	bottom:3PX;
+	font-size:8px;
+	&:before{
+		content:"";
+		display:block;
+		text-align:center;
+		background:url(../img/img_01.jpg) no-repeat;
+		width:63px;
+		height:23px;
+		background-size:cover;
+	}
+}
+.page1{
+	.G3{
+		color:#5E83E1;
+		text-align:center;
+		line-height:30px;
+		margin-left:-20px;
+		margin-top:135px;
+		&:before{
+			content:"?";
+			color:#fff;
+			display:inline-block;
+			width:20px;height:20px;
+			border-radius:10px;
+			line-height:22px;
+			margin-right:10px;
+			background:#5E83E1;
+		}
+	}
+	.reset{
+		width:73%;
+		height:30px;
+		color:#9c9c9c;
+		line-height:30px;
+		@include pos;
+		bottom:50px;
+		text-align:center;
+		font-size:16px;
+		&:after{
+			content:"";
+			display:inline-block;
+			width:10px;height:10px;
+			border-top:1px solid #333;
+			border-right:1px solid #333;
+			margin-left:5px;
+			-webkit-transform:rotate3d(0,0,1,45deg)
+		}
+	}
+}
+.subBox{
+	@include pos;
+	left:0;right:0;
+	margin:auto;
+	width:70%;
+}
+input[type=submit]{
+		border:none;
+		color:#fff;
+		height:40px;
+		width:100%;
+		outline:none;
+		margin:5px 0;
+		font-size:16px;
+		line-height:44px;
+		border-radius:20px;
+	}
+.page1-txt{
+	@include pos(relative);
+	input{
+		outline:none;
+		width:100%;
+		font-size:16px;
+		line-height:44px;
+		border:none;
+		border-bottom:1px solid #EEE;
+	}
+
+}
+
+.page2{
+	MARGIN-BOTTOM:16PX;
+	.already{
+		font-size:14px;
+		color:#333;
+		line-height:38px;
+	}
+	.chinese-why{
+		color:#9c9c9c;
+		width:100%;
+		margin-top:37px;
+		h1{
+			line-height:40px;
+			color:#9c9c9c;
+			font-size:18px;
+		}
+		h2,p{
+			font-size:14px;
+			line-height:30px;
+
+		}
+		h2{
+			&:before{
+				content:"";
+				display:INLINE-block;
+				width:15px;
+				height:15px;
+				background:#eee;
+				margin-right:10px;
+			}
+		}
+		p{
+		padding-left:25px;
+		}
+	}
+
+}
